@@ -4,9 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Helloworld from './components/Helloworld'
 import Header from './components/Header'
-import Library from './components/Library'
+import Library from './components/Bookgenerate/Library'
 import Todolist from './components/Todolist'
-import Bookgenerate from './components/Bookgenerate'
+import Bookgenerate from './components/Bookgenerate/Bookgenerate'
+import Tiktaktoe from './components/Tiktaktoe/Tiktaktoe'
 function App() {
   return (
     <>
@@ -14,7 +15,8 @@ function App() {
       <Helloworld />
       <Library />
       <Todolist />
-      <Bookgenerate/>
+      <Bookgenerate />
+      <Tiktaktoe />
     </> 
   )
 }

@@ -8,6 +8,7 @@ export default function Todolist(){
     const [todoList,setTodoList]=useState([])
     const addItem = () =>{
         setTodoList([...todoList,inputValue])
+        console.log(todoList)
     }
 
     return(
