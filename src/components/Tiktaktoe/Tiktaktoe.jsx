@@ -12,13 +12,18 @@ export default function Tiktaktoe(){
 
     function clickButton(location){
         if(whoDo[location-1]=='' && whoWin==null){
-            setCount(count+1);
+            setCount((count)=> count+1);
             setHistory([...history,[location,whoPlayer,count]]);
-            setWhoDo(prevWhoDo => 
-                prevWhoDo.map((item, index) => index === location - 1 ? whoPlayer : item));
-            if(whoPlayer=='O') setWhoPlayer('X');
-            else setWhoPlayer('O');
-            setWhoWin(checkWinner(whoDo))
+            // 업데이트된 배열을 새로 만들어 사용
+            const updatedWhoDo = whoDo.map((item, index) =>
+                index === location - 1 ? whoPlayer : item
+            );
+
+            setWhoDo(updatedWhoDo);
+            setWhoWin(checkWinner(updatedWhoDo)); // 업데이트된 배열로 승리 체크
+
+            // 플레이어 변경
+            setWhoPlayer(whoPlayer === 'O' ? 'X' : 'O');
     }
 
     function checkWinner(whoDo) {
@@ -42,8 +47,6 @@ export default function Tiktaktoe(){
     
         return null;
     }
-    
-    
 }
 
     return(
