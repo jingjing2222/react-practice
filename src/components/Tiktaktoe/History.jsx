@@ -1,7 +1,7 @@
 import { useState, React } from "react";
 
-export function history(props){
+export function History(props){
     return(
-        <div>{props.location}에 {props.who}가 놓았습니다.</div>
+        <div>#{props.count} {props.location}에 {props.who}가 놓았습니다.</div>
     );
 }
