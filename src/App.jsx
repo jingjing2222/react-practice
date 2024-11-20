@@ -8,15 +8,12 @@ import Library from './components/Bookgenerate/Library'
 import Todolist from './components/Todolist'
 import Bookgenerate from './components/Bookgenerate/Bookgenerate'
 import Tiktaktoe from './components/Tiktaktoe/Tiktaktoe'
+import Displaycomponents from './components/Displaycomponents'
 function App() {
   return (
     <>
       <Header />
-      <Helloworld />
-      <Library />
-      <Todolist />
-      <Bookgenerate />
-      <Tiktaktoe />
+      <Displaycomponents />
     </> 
   )
 }

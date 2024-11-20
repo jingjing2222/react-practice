@@ -71,8 +71,7 @@ export default function Tiktaktoe(){
                     <Square item={whoDo[8]} onClick={()=>clickButton(9)}/>
                 </div>
             </div>
-            {history.map((item)=><History location={item[0]} who={item[1]} count={item[2]}/>)}
-            {whoWin !== null ? <Whowin whowin={whoWin}/> : <></> }
+            {whoWin !== null ? <Whowin whowin={whoWin}/> : history.map((item)=> <History location={item[0]} who={item[1]} count={item[2]}/>)}
         </div>
     );
 }

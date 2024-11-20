@@ -14,7 +14,9 @@ export default function Bookgenerate(){
     }
     return(
         <>
+            <div>제목</div>
             <input className="mr-0.5" type="text" value={inputName} onChange={(event)=>{setInputName(event.target.value)}}/>
+            <div>페이지</div>
             <input className="mr-0.5" type="text" value={inputPage} onChange={(event)=>{setInputPage(event.target.value)}}/>
             <button onClick={addBook}>추가</button>
             {bookList.map((item)=><Booklist name={item[0]} page={item[1]}/>)}
