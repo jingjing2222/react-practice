@@ -1,6 +1,7 @@
 import {React,useState} from "react";
 import WeatherButton from "./WeatherButton";
 
+
 export default function Weather(){
     const[weather,setWeather]=useState([])
 
@@ -16,7 +17,7 @@ export default function Weather(){
         }
     }
     const getWeatherByCurrentLocation= async (lat, lon)=>{
-        let key = '7bf5837d47c4097656c3d70af43dd0b4'
+        let key = import.meta.env.VITE_OPENWEATHERMAP_KEY;
         let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
         let response = await fetch(url)
         let data = await response.json();
