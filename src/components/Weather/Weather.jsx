@@ -1,8 +1,9 @@
 import {React,useState} from "react";
+import WeatherButton from "./WeatherButton";
 
 export default function Weather(){
-
     const[weather,setWeather]=useState([])
+
     function getLocation() {
         if (navigator.geolocation) {
             return navigator.geolocation.getCurrentPosition((position)=>{
@@ -19,13 +20,17 @@ export default function Weather(){
         let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
         let response = await fetch(url)
         let data = await response.json();
-        setWeather(data.main.temp-273);
-
+        setWeather([data.name,Math.round((data.main.temp-273) * 10) / 10,data.weather[0].main]);
     }
 
     return(
         <>
-            <button className="rounded text-center m-4 p-4 border-white border-2 min-w-14 min-h-14" onClick={getLocation}>{weather}도</button>
+        <div>
+            <WeatherButton onClick={getLocation} location='현재 위치'/>
+        </div>
+        <div className="text-center border-2 min-w-2 min-h-2 w-52">
+            <div>위치:{weather[0]}</div> <div>기온:{weather[1]}도</div> <div>날씨:{weather[2]}</div>
+        </div>
         </>
     );
 }
