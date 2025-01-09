@@ -58,12 +58,11 @@ function InputForm({ title, onChangeValue, inform, validation }) {
                 <input onChange={onChangeValue} />
             </div>
             <>
-                {validation ? (
+                {validation && (
                     <div style={{ color: 'red' }}>{`${inform}은 필수 입력값입니다.`}</div>
-                ) : (
-                    <></>
                 )}
             </>
         </>
     )
 }
+//화장실~~~~

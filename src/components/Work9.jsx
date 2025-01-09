@@ -19,7 +19,7 @@ export default function Work9() {
 
     const onChangeValue = (e) => {
         currnetAge.current = Number(e.currentTarget.value)
-        activateSetValid(20)
+        activateSetValid(19)
     }
 
     function activateSetValid(num) {

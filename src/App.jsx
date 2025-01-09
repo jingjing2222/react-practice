@@ -8,6 +8,7 @@ import Work6 from '@/components/Work6'
 import Work9 from '@/components/Work9'
 import Work10 from '@/components/Work10'
 import AaronLecture1 from '@/components/AaronLecture1'
+import AaronLecture2 from '@/components/AaronLecture2'
 
 function App() {
     return (
@@ -38,6 +39,9 @@ function App() {
             </div>
             <div className='container-item'>
                 <AaronLecture1 />
+            </div>
+            <div className='container-item'>
+                <AaronLecture2 />
             </div>
         </div>
     )
