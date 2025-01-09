@@ -1,8 +1,7 @@
-# React + Vite
+## ASAC 07기 React 기본 실습
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Work 02
 
-Currently, two official plugins are available:
+#### [**실습 2] : 레벨업 버튼을 눌렀을때 레벨업이 되고, 15레벨에서 `1차 전직`, 30레벨에서 `2차 전직` 하라\*\*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- SetState 사용법 2가지 모두를 사용해보아라
