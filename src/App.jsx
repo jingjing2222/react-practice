@@ -10,6 +10,7 @@ import Work10 from '@/components/Work10'
 import AaronLecture1 from '@/components/AaronLecture1'
 import AaronLecture2 from '@/components/AaronLecture2'
 import Work11 from '@/components/Work11'
+import Work12 from '@/components/Work12'
 
 function App() {
     return (
@@ -46,6 +47,9 @@ function App() {
             </div>
             <div className='container-item'>
                 <Work11 />
+            </div>
+            <div className='container-item'>
+                <Work12 />
             </div>
         </div>
     )
