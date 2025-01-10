@@ -54,6 +54,8 @@
     border: 5px solid #000;
     width: 340px;
     padding: 20px;
+    height: auto;
+    width: auto;
 }
 
 .li-items {
