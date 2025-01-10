@@ -69,3 +69,10 @@
 - 그 다음 단일 컴포넌트를 재활용 가능토록 + Validation 도 파라미터로 선택가능하도록 만들어라
   ![alt text](image.png)
   ![alt text](image-1.png)
+
+### Work 11
+
+#### **렌더링 없이도 `ref` 를 통해 DOM 조작이 가능하다는것을 직접 코드를 통해 이해해보자**
+
+- 아래의 코드에서 `apple` 영역을 `button` 을 통해 `- rerendered` 로그없이 색을 바꾸어보자
+    - **제약** : `button` 을 눌렀을때 `- rerendered` 로그가 절대 찍히면 안된다.
