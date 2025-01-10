@@ -8,7 +8,7 @@ export default function Work12() {
     ]
     // console.log('- rerendered')
 
-    function changeVideo(num) {
+    function changeVideo(num, sources) {
         refer.current.src = sources[num - 1]
     }
 
@@ -18,8 +18,8 @@ export default function Work12() {
             <hr />
             <video ref={refer} autoPlay controls width={500} />
             <div>
-                <button onClick={() => changeVideo(1)}>전환 1</button>
-                <button onClick={() => changeVideo(2)}>전환 2</button>
+                <button onClick={() => changeVideo(1, sources)}>전환 1</button>
+                <button onClick={() => changeVideo(2, sources)}>전환 2</button>
             </div>
         </>
     )
