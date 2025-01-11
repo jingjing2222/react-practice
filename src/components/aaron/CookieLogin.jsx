@@ -1,9 +1,19 @@
-import { useState } from 'react'
+import { useRef } from 'react'
 import { useCookies } from 'react-cookie'
+import * as v from 'valibot'
 
 export default function CookieLogin() {
-    const [userId, setUserId] = useState('')
     const [cookie, setCookie] = useCookies(['userId'])
+    const userIdRef = useRef('')
+
+    const onClickHandler = () => {
+        const Schema = v.object({
+            userId: v.pipe(v.string(), v.minLength(3), v.maxLength(10)),
+        })
+        const result = v.safeParse(Schema, { userId: userIdRef.current })
+        if (!result.success) console.log(result.issues[0]?.message)
+        else setCookie('userId', userIdRef.current, { path: '/' })
+    }
 
     return (
         <>
@@ -11,13 +21,11 @@ export default function CookieLogin() {
             <input
                 type='text'
                 onChange={(e) => {
-                    const value = e.currentTarget.value
-                    setUserId(() => {
-                        setCookie('userId', value, { path: '/' })
-                        return value
-                    })
+                    userIdRef.current = e.currentTarget.value
                 }}
             />
+            <button onClick={onClickHandler}>입력</button>
+            <div>기존 비회원 번호:{cookie?.userId}</div>
         </>
     )
 }

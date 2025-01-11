@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
+import { Cookies } from 'react-cookie'
 
 export default function TheHeader() {
+    const userInCookie = new Cookies()
+    const userId = userInCookie.get('userId')
     return (
         <header>
             <nav className='nav-bar'>
@@ -15,6 +18,7 @@ export default function TheHeader() {
                     <div className='nav-bar-item'>
                         <Link to='/aaron'>Aaron</Link>
                     </div>
+                    {userId && <div className='nav-bar-item'>{userId}님 환영합니다!</div>}
                 </div>
             </nav>
         </header>
