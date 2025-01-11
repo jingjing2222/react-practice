@@ -1,6 +1,7 @@
 import Review from '@/components/aaron/Review'
 import AaronLecture1 from '@/components/aaron/AaronLecture1'
 import AaronLecture2 from '@/components/aaron/AaronLecture2'
+import CookieLogin from '@/components/aaron/CookieLogin'
 // import '@/routes/pages/App.css'
 
 export default function Aaron() {
@@ -14,6 +15,9 @@ export default function Aaron() {
             </div>
             <div className='container-item'>
                 <AaronLecture2 />
+            </div>
+            <div className='container-item'>
+                <CookieLogin />
             </div>
         </div>
     )
