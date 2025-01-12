@@ -1,5 +1,6 @@
 import GetTest1 from '@/components/test/GetTest1'
 import GetTest2 from '@/components/test/GetTest2'
+import GetTest3 from '@/components/test/GetTest3'
 
 export default function Test() {
     return (
@@ -9,6 +10,9 @@ export default function Test() {
             </div>
             <div className='container-item'>
                 <GetTest2 />
+            </div>
+            <div className='container-item'>
+                <GetTest3 />
             </div>
         </div>
     )

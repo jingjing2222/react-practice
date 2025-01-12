@@ -25,7 +25,7 @@ export default function GetTest1() {
     if (error) return <div>에러: {error}</div>
     return (
         <div>
-            <div style={{ fontSize: 25 }}>GetTest</div>
+            <div style={{ fontSize: 25 }}>GetTest1</div>
             <hr />
             <ul>
                 {users.map((user) => (

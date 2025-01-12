@@ -14,7 +14,7 @@ export default function GetTest2() {
     }
     return (
         <div>
-            <div style={{ fontSize: 25 }}>GetTest</div>
+            <div style={{ fontSize: 25 }}>GetTest2</div>
             <hr />
             <button onClick={onClickHandler}>눌러주세용</button>
             <ul>
