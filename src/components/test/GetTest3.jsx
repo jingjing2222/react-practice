@@ -6,7 +6,7 @@ export default function GetTest3() {
     const onChangeHandler = (e) => setShow(e.target.value)
     return (
         <>
-            <div style={{ fontSize: 25 }}>GetTest2</div>
+            <div style={{ fontSize: 25 }}>GetTest3</div>
             <hr />
             <select style={{ display: 'block' }} onChange={onChangeHandler}>
                 <option value='Form'>Form</option>

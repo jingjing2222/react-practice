@@ -3,7 +3,7 @@ import { useCookies } from 'react-cookie'
 import * as v from 'valibot'
 
 export default function CookieLogin() {
-    const [cookie, setCookie] = useCookies(['userId'])
+    const [cookie, setCookie, removeCookie] = useCookies(['userId'])
     const [error, setError] = useState('')
     const userIdRef = useRef('')
 
@@ -21,6 +21,8 @@ export default function CookieLogin() {
 
     return (
         <>
+            <div style={{ fontSize: 25 }}>react-cookie Login</div>
+            <hr />
             <span>비회원 번호 : </span>
             <input
                 type='text'
@@ -31,6 +33,7 @@ export default function CookieLogin() {
             <button onClick={onClickHandler}>입력</button>
             <div>기존 비회원 번호:{cookie?.userId}</div>
             {error ?? <div>{error}</div>}
+            <button onClick={() => removeCookie('userId', { path: '/' })}>쿠키 삭제</button>
         </>
     )
 }

@@ -1,3 +1,4 @@
+import CookieLogin from '@/components/test/CookieLogin'
 import Play from '@/components/test/GetTest0'
 import GetTest1 from '@/components/test/GetTest1'
 import GetTest2 from '@/components/test/GetTest2'
@@ -17,6 +18,9 @@ export default function Test() {
             </div>
             <div className='container-item'>
                 <Play />
+            </div>
+            <div className='container-item'>
+                <CookieLogin />
             </div>
         </div>
     )
