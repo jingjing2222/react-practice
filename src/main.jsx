@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 // import App from './App.jsx'
-import Router from '@/routes/index.jsx'
+import Router from '@/routes/Router.jsx'
 import './index.css'
 import '@/App.css'
 import { CookiesProvider } from 'react-cookie'

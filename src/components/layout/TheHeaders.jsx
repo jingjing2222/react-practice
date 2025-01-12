@@ -18,6 +18,9 @@ export default function TheHeader() {
                     <div className='nav-bar-item'>
                         <Link to='/aaron'>Aaron</Link>
                     </div>
+                    <div className='nav-bar-item'>
+                        <Link to='/test'>Test</Link>
+                    </div>
                     {userId && <div className='nav-bar-item'>{userId}님 환영합니다!</div>}
                 </div>
             </nav>

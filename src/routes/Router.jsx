@@ -1,9 +1,9 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-// @ts-ignore
 import Home from '@/routes/pages/Home'
 import Work from '@/routes/pages/Work'
 import Aaron from '@/routes/pages/Aaron'
 import DefaultLayout from '@/routes/layouts/DefaultLayout'
+import Test from '@/routes/pages/Test'
 
 const router = createBrowserRouter([
     {
@@ -20,6 +20,10 @@ const router = createBrowserRouter([
             {
                 path: '/Aaron',
                 element: <Aaron />,
+            },
+            {
+                path: '/Test',
+                element: <Test />,
             },
         ],
     },

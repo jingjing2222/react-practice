@@ -15,7 +15,7 @@ function AaronLecture2() {
 
     return (
         <>
-            <div style={{ fontSize: 25 }}>Aaron1</div>
+            <div style={{ fontSize: 25 }}>Aaron2</div>
             <hr />
             <div ref={reference}>apple</div>
         </>
