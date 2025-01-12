@@ -3,11 +3,7 @@ import { useForm } from 'react-hook-form'
 
 export default function GetTest3() {
     const [show, setShow] = useState('Form')
-    const onChangeHandler = (e) => {
-        const newShow = e.target.value
-        setShow(newShow)
-        console.log(newShow)
-    }
+    const onChangeHandler = (e) => setShow(e.target.value)
     return (
         <>
             <div style={{ fontSize: 25 }}>GetTest2</div>

@@ -21,7 +21,7 @@ export default function Play() {
     }
     return (
         <>
-            <div style={{ fontSize: 25 }}>Play</div>
+            <div style={{ fontSize: 25 }}>GetTest0</div>
             <hr />
             <input type='text' onChange={inputName} />
             <div>{show ? name : message}</div>
