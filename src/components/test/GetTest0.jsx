@@ -2,8 +2,8 @@ import { useState } from 'react'
 import * as v from 'valibot'
 
 function validate(object) {
-    const Schema = v.object({ name: v.pipe(v.string(), v.maxLength(5)) })
-    return v.safeParse(Schema, object)
+    const Schema = { name: v.object({ name: v.pipe(v.string(), v.maxLength(5)) }) }
+    return v.safeParse(Schema.name, object)
 }
 
 export default function Play() {

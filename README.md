@@ -7,3 +7,5 @@
 - react-hook-form
 - react-router-dom
 - valibot
+- prettier
+- ESlint

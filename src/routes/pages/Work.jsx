@@ -8,6 +8,7 @@ import Work10 from '@/components/work/Work10'
 import Work11 from '@/components/work/Work11'
 import Work12 from '@/components/work/Work12'
 import Work13 from '@/components/work/Work13'
+import Work12_1 from '@/components/work/Work12_1'
 // import '@/routes/pages/App.css'
 
 function Work() {
@@ -39,6 +40,9 @@ function Work() {
             </div>
             <div className='container-item'>
                 <Work12 />
+            </div>
+            <div className='container-item'>
+                <Work12_1 />
             </div>
             <div className='container-item'>
                 <Work13 />

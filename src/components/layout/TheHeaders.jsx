@@ -20,8 +20,8 @@ export default function TheHeader() {
                     </div>
                     <div className='nav-bar-item'>
                         <Link to='/test'>Test</Link>
-                    </div>
-                    {userId && <div className='nav-bar-item'>{userId}님 환영합니다!</div>}
+                    </div >
+                    {userId && <div style={{fontSize:10}} className='nav-bar-item'>{userId}님 환영합니다!</div>}
                 </div>
             </nav>
         </header>

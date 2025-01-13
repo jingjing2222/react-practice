@@ -107,4 +107,5 @@ div.nav-bar-items {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    color: red;
 }
