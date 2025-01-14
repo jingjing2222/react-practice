@@ -15,7 +15,7 @@ export default function CookieLogin() {
         if (!result.success) setError(result.issues[0]?.message)
         else {
             setCookie('userId', userIdRef.current, { path: '/' })
-            window.location.reload()
+            setError(null)
         }
     }
 

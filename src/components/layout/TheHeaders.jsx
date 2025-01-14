@@ -1,9 +1,7 @@
+import LoginInfo from '@/components/layout/LoginInfo'
 import { Link } from 'react-router-dom'
-import { Cookies } from 'react-cookie'
 
 export default function TheHeader() {
-    const userInCookie = new Cookies()
-    const userId = userInCookie.get('userId')
     return (
         <header>
             <nav className='nav-bar'>
@@ -20,8 +18,8 @@ export default function TheHeader() {
                     </div>
                     <div className='nav-bar-item'>
                         <Link to='/test'>Test</Link>
-                    </div >
-                    {userId && <div style={{fontSize:10}} className='nav-bar-item'>{userId}님 환영합니다!</div>}
+                    </div>
+                    <LoginInfo />
                 </div>
             </nav>
         </header>
