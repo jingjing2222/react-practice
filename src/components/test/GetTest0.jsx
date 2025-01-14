@@ -13,9 +13,11 @@ export default function Play() {
 
     const inputName = (e) => {
         const result = validate({ name: e.currentTarget.value })
-        if (result.success) setName(e.currentTarget.value)
-        else {
-            setShow((prev) => !prev)
+        if (result.success) {
+            setName(e.currentTarget.value)
+            setShow(true)
+        } else {
+            setShow(false)
             setMessage(result.issues[0].message)
         }
     }
