@@ -6,7 +6,6 @@ import Header from '@/routes/layouts/Header'
 import Test from '@/routes/pages/Test'
 import Cart from '@/components/test/ContextTest/Cart'
 import ProductList from '@/components/test/ContextTest/Prouduct'
-import { CarListProvider } from '@/components/test/ContextTest'
 
 const router = createBrowserRouter([
     {
