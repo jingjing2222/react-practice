@@ -109,3 +109,32 @@ div.nav-bar-items {
     justify-content: space-around;
     color: red;
 }
+
+.show-header-title {
+    opacity: 1 !important;
+    transition: all 100ms ease-in;
+}
+
+.component-box {
+    border: 2px solid white;
+}
+
+.section-box {
+    border: 2px solid rgb(255, 224, 147);
+}
+
+/* body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    color-scheme: light;
+    background-color: rgba(255, 255, 255, 0.87);
+    color: #242424;
+}
+body.dark {
+    color-scheme: dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+} */
