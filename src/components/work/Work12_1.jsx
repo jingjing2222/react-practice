@@ -24,7 +24,6 @@ function Input({ category, length = 0, require = false }) {
     const [valid, setValid] = useState(true)
     const ref = useRef(null)
     const error = { username: '글씨가 10보다 작아야 합니다.', password: '입력은 필수입니다' }
-    console.log('rerendered')
 
     const validate = (e, setValid, length = undefined, require = false) => {
         if (require) setValid(e.target.value.length !== 0)
