@@ -1,8 +1,10 @@
+import { CarListProvider, ContextTest } from '@/components/test/ContextTest'
 import CookieLogin from '@/components/test/CookieLogin'
 import Play from '@/components/test/GetTest0'
 import GetTest1 from '@/components/test/GetTest1'
 import GetTest2 from '@/components/test/GetTest2'
 import GetTest3 from '@/components/test/GetTest3'
+import { Outlet } from 'react-router-dom'
 
 export default function Test() {
     return (
@@ -21,6 +23,12 @@ export default function Test() {
             </div>
             <div className='container-item'>
                 <CookieLogin />
+            </div>
+            <div className='container-item'>
+                <CarListProvider>
+                    <ContextTest />
+                    <Outlet />
+                </CarListProvider>
             </div>
         </div>
     )

@@ -4,6 +4,9 @@ import Work from '@/routes/pages/Work'
 import Aaron from '@/routes/pages/Aaron'
 import Header from '@/routes/layouts/Header'
 import Test from '@/routes/pages/Test'
+import Cart from '@/components/test/ContextTest/Cart'
+import ProductList from '@/components/test/ContextTest/Prouduct'
+import { CarListProvider } from '@/components/test/ContextTest'
 
 const router = createBrowserRouter([
     {
@@ -24,6 +27,10 @@ const router = createBrowserRouter([
             {
                 path: '/Test',
                 element: <Test />,
+                children: [
+                    { path: 'cart', element: <Cart /> },
+                    { path: 'product', element: <ProductList /> },
+                ],
             },
         ],
     },
