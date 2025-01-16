@@ -10,6 +10,8 @@ import Work12 from '@/components/work/Work12'
 import Work13 from '@/components/work/Work13'
 import Work12_1 from '@/components/work/Work12_1'
 import Work17 from '@/components/work/Work17'
+import Work19 from '@/components/work/Work19'
+import Work22 from '@/components/work/Work22'
 // import '@/routes/pages/App.css'
 
 function Work() {
@@ -50,6 +52,12 @@ function Work() {
             </div>
             <div className='container-item'>
                 <Work17 />
+            </div>
+            <div className='container-item'>
+                <Work19 />
+            </div>
+            <div className='container-item'>
+                <Work22 />
             </div>
         </div>
     )

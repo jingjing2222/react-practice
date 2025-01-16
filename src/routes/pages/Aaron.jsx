@@ -4,6 +4,7 @@ import AaronLecture2 from '@/components/aaron/AaronLecture2'
 import AaronLecture3 from '@/components/aaron/AaronLecture3'
 import AaronLecture4 from '@/components/aaron/AaronLecture4'
 import AaronLecture5 from '@/components/aaron/AaronLecture5'
+import AaronLecture6 from '@/components/aaron/AaronLecture6'
 // import '@/routes/pages/App.css'
 
 export default function Aaron() {
@@ -26,6 +27,9 @@ export default function Aaron() {
             </div>
             <div className='container-item'>
                 <AaronLecture5 />
+            </div>
+            <div className='container-item'>
+                <AaronLecture6 />
             </div>
         </div>
     )
